@@ -1,12 +1,27 @@
 <?php
 
-class Auto{
+class Movie{
 
+    public $titolo;
+    public $genere;
+    public $durata;
+
+    function __construct($_titolo, $_genere){      
+    $this->titolo = $_titolo;
+    $this->genere = $_genere;
+    }
 }
 
-$alfa_romeo1 = new Auto();
+// prima istanza
 
-var_dump($alfa_romeo1);
+$primo_film = new Movie('spiderman', 'azione');
+$primo_film->durata = '2.30';
+var_dump($primo_film);
 
+// seconda istanza
+
+$ironman= new Movie('ironmman', 'sci-fi');
+$primo_film->durata = '2.30';
+var_dump($ironman);
 
 ?>
