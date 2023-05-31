@@ -23,14 +23,14 @@ class Movie{
 
 // prima istanza
 
-$primo_film = new Movie('Spiderman', 'azione');
+$primo_film = new Movie('Spiderman', 'azione avventura ');
 $primo_film->durata = '2.30';
 $primo_film->getVoto();
 // var_dump($primo_film);
 
 // seconda istanza
 
-$secondo_film = new Movie('Ironmman 2', 'sci-fi');
+$secondo_film = new Movie('Ironmman 2', 'sci-fi animazione');
 $secondo_film->durata = '2.50';
 $secondo_film->getVoto2();
 // var_dump($secondo_film);
